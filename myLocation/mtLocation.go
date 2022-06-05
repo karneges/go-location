@@ -15,7 +15,7 @@ type LocationResult struct {
 func GetMyLocation() (LocationResult, error) {
 	var locationResponse LocationResult
 
-	resp, err := http.Get("https://api.myip.com/")
+	resp, err := http.Get("http://ip-api.com/json/")
 	if err != nil {
 		return locationResponse, err
 	}
